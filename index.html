@@ -8,7 +8,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="./script/index.js" defer></script>
+	<!-- атрибут defer и async позволяет считывать весь документ, даже если js расположен в самом начале, это оптимизирует верстку  -->
 	<title>Delivery Food</title>
 </head>
 
@@ -26,7 +28,7 @@
 							<img src="./images/icons/user.png" alt="user">
 							Войти
 						</button>
-						<button class="btn btn-outline">
+						<button class="btn btn-outline" id="cart-button">
 							<img src="./images/icons/shopping-cart.png" alt="shopping cart">
 							Корзина
 						</button>
@@ -58,10 +60,10 @@
 						<input class="products-header--search" type="text" placeholder="Поиск блюд и ресторанов">
 					</div>
 
-					<div class="products-wrapper">
-						<a href="/goods.html" class="products-card">
+					<div class="products-wrapper" id="rests-container">
+						<a href="/goods.html" class="products-card" id="5">
 							<div class="products-card__image">
-								<img src="./images/rests/pizzaplus.jpg" alt="pizzaplus">
+								<img src="./images/rests/rests-1.jpg" alt="pizzaplus">
 							</div>
 							<div class="products-card__description">
 								<div class="products-card__description-row">
@@ -82,7 +84,7 @@
 						</a>
 						<a href="/goods.html" class="products-card">
 							<div class="products-card__image">
-								<img src="./images/rests/tanuki.jpg" alt="tanuki">
+								<img src="./images/rests/rests-2.jpg" alt="tanuki">
 							</div>
 							<div class="products-card__description">
 								<div class="products-card__description-row">
@@ -103,7 +105,7 @@
 						</a>
 						<a href="/goods.html" class="products-card">
 							<div class="products-card__image">
-								<img src="./images/rests/foodband.jpg" alt="foodband">
+								<img src="./images/rests/rests-3.jpg" alt="foodband">
 							</div>
 							<div class="products-card__description">
 								<div class="products-card__description-row">
@@ -124,7 +126,7 @@
 						</a>
 						<a href="/goods.html" class="products-card">
 							<div class="products-card__image">
-								<img src="./images/rests/greedypizza.jpg" alt="greedypizza">
+								<img src="./images/rests/rests-4.jpg" alt="greedypizza">
 							</div>
 							<div class="products-card__description">
 								<div class="products-card__description-row">
@@ -145,7 +147,7 @@
 						</a>
 						<a href="/goods.html" class="products-card">
 							<div class="products-card__image">
-								<img src="./images/rests/foodpoint.jpg" alt="foodpoint">
+								<img src="./images/rests/rests-5.jpg" alt="foodpoint">
 							</div>
 							<div class="products-card__description">
 								<div class="products-card__description-row">
@@ -166,7 +168,7 @@
 						</a>
 						<a href="/goods.html" class="products-card">
 							<div class="products-card__image">
-								<img src="./images/rests/pizzaburger.jpg" alt="pizzaburger">
+								<img src="./images/rests/rests-6.jpg" alt="pizzaburger">
 							</div>
 							<div class="products-card__description">
 								<div class="products-card__description-row">
@@ -319,6 +321,7 @@
 			</div>
 		</footer>
 	</div>
+
 </body>
 
 </html>
